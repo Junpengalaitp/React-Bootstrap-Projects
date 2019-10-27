@@ -6,6 +6,8 @@ import Section from './components/Section';
 import exploreImage from './img/explore-section1.jpg'
 import createImage from './img/create-section1.jpg'
 import shareImage from './img/share-section1.jpg'
+import Footer from './components/Footer';
+import Modal from './components/Modal';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         aClass={'btn btn-outline-light'} bodyHead={"Create Your Passion"} order1={"col-md-6 order-2"}  order2={"col-md-6 order-1"}/>
       <Section id={"share-head-section"} head={"Share"} headClass={"bg-primary"} bodyClass={"bg-light text-muted py-5"} image={shareImage}
         aClass={'btn btn-outline-light'} bodyHead={"Share What You Create"} order1={"col-md-6"}  order2={"col-md-6"}/>
+      <Footer />
+      <Modal />
     </div>
   );
 }
